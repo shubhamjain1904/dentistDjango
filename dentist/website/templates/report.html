@@ -1,0 +1,37 @@
+
+	{%extends 'base.html'%}
+	{%load static%}
+
+
+{%block content%}
+
+    <section class="banner-area relative about-banner" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Report
+							</h1>
+							<p class="text-white link-nav"><a href="{%url 'home'%}">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="{%url 'report'%}"> Report</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+<section>
+
+<img  class="mx-auto p-3"
+
+src={{request.user.post.cover.url}}
+>
+
+
+
+
+
+
+
+</section>
+
+
+{%endblock%}
